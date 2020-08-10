@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'bwm-rental-listing-item',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rental-listing-item.component.scss']
 })
 export class RentalListingItemComponent implements OnInit {
-
+ @Input() rental: any;
   constructor() { }
 
   ngOnInit() {
